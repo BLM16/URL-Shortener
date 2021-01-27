@@ -8,6 +8,10 @@ Developer: [Bradley Myers](https://github.com/BLM16)
 
 Date created: 2021-01-27 | Last updated: 2021-01-27
 
+---
+
+The URL Shortener takes a URL, gives it a "key" and then redirects https://my_domain.com/key to the given URL.
+
 ## Setup
 
 **Make sure you have Python (3.9.x) installed, and added to PATH.**
