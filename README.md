@@ -26,6 +26,17 @@ pip install -r requirements.txt
 deactivate
 ```
 
+Create the database with the following commands:
+
+```py
+.\venv\Scripts\activate.bat
+python
+from config import db
+from models.url import URL
+db.create_all()
+deactivate
+```
+
 ## License
 
 This code is licensed under the [MIT License](./LICENSE)

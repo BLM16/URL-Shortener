@@ -1,2 +1,11 @@
 # Ignore our virtual environment. Everyone sets up their own.
 venv/
+
+# Ignore IDE specific settings
+.vscode/
+
+# Ignore databases.
+*.db
+
+# Ignore auto-generated python binary files
+__pycache__/
