@@ -1,0 +1,2 @@
+# Ignore our virtual environment. Everyone sets up their own.
+venv/
