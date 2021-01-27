@@ -18,10 +18,12 @@ Create a virtual environment with the following command. All commands are to be 
 python -m venv venv
 ```
 
-Install all the dependencies with the following command:
+Install all the dependencies with the following commands:
 
 ```bat
+.\venv\Scripts\activate.bat
 pip install -r requirements.txt
+deactivate
 ```
 
 ## License
