@@ -14,7 +14,7 @@ def PageNotFound(e):
 def Index():
     return render_template("index.html")
 
-@routes.route('/<int:key>')
+@routes.route('/<key>')
 def KeyRedir(key):
     # Connect to the DB
     with engine.connect() as con:
