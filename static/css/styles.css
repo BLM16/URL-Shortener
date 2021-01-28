@@ -1,3 +1,19 @@
+.navbar.bg-dark { box-shadow: 0 0 8px 1px #343A40; }
+
 .top-spacemaker { padding-top: calc(50px + 5vh); }
 
 .bottom-spacemaker { padding-top: 50px; }
+
+.splash-bg {
+    background: linear-gradient(110deg, navy, purple);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60vh;
+    border-radius: 0 !important;
+    border-bottom-right-radius: 10% !important;
+    border-bottom-left-radius: 10% !important;
+}
+
+.main { transform: translateY(60vh); }

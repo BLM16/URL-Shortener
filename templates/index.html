@@ -3,7 +3,39 @@
 
 {% block content %}
     {{ super() }}
-    <div class="container">
-        <h1>Hello World!</h1>
+    <div class="splash-bg jumbotron">
+        <div class="pt-5">
+            <form method="post" class="container-fluid col-md-8">
+                <label class="sr-only" for="txtURL">URL</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fas fa-link"></i></div>
+                    </div>
+                    <input class="form-control form-control-lg" type="text" name="url" id="txtURL" placeholder="URL you wish to shorten . . .">
+                    <div class="input-group-append">
+                        <input type="submit" class="btn btn-primary" value="  Go  ">
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+
+    <div class="container main">
+        <div class="row text-center">
+            <div class="col-md-4 pb-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque sapiente nemo, facere molestias obcaecati? Consequatur mollitia vitae neque, dolorum harum, saepe natus blanditiis tempore sapiente cumque nulla voluptate minus, fugiat fuga! Itaque accusamus quas assumenda vitae sunt repellendus optio ullam qui deserunt temporibus, amet consequatur minima quisquam placeat ratione architecto facilis quibusdam numquam id? Obcaecati consequatur dolorem tempore quasi veniam numquam culpa atque incidunt. Suscipit esse temporibus exercitationem officia beatae quasi, nisi, reiciendis veritatis modi sapiente aut accusantium laudantium ducimus omnis ipsum nam blanditiis est magnam itaque. Incidunt repudiandae consequatur natus, quod dolore tempore laboriosam repellat iure aut error. Quod quo dicta doloribus deserunt temporibus magni rem reiciendis quis laboriosam quasi amet distinctio alias nisi earum qui doloremque, debitis optio, odio deleniti veritatis. Aspernatur, quia. Laboriosam a itaque, facere officiis molestiae ratione perferendis ullam error sequi nihil ut, iusto quam, animi fugit. Reiciendis reprehenderit quae debitis sed odit deleniti odio, excepturi voluptatibus earum repellat eius ratione veritatis praesentium ut consequuntur, repudiandae, quaerat aliquam. Repellat consectetur ex vel facilis, iste sapiente quibusdam? Nobis nemo reiciendis ipsa! Quod ad dicta iusto, nisi modi iste incidunt quidem at? Beatae, obcaecati? Illum provident soluta natus fugit esse distinctio, in vero! Ipsum, omnis quae.
+            </div>
+            <div class="col-md-4 pb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem officia vel illo doloribus reprehenderit inventore necessitatibus consectetur eaque! Fugiat vitae, molestias temporibus natus est ad, repellendus eum doloremque voluptatum ipsum debitis voluptates inventore delectus quos, voluptate tempora ab recusandae. Vero, aliquid. Nesciunt sit illum nemo a assumenda harum quisquam minus? Aspernatur beatae rerum ad autem molestiae eaque commodi veritatis atque at quasi ex qui, totam mollitia nostrum repellat, perspiciatis tempora, itaque esse cupiditate. At eum commodi fugit, accusantium magni architecto veniam libero quas, maxime, velit in iure odit maiores natus totam incidunt suscipit cupiditate unde aut sed laudantium voluptates nihil? Nesciunt, quae. Voluptatibus, tenetur, quas est distinctio porro veritatis expedita sapiente fugiat vitae magni obcaecati eius, eaque quo dolorem voluptas consequatur placeat sit recusandae ratione id dolore laborum impedit? Odio, hic! Quasi assumenda commodi tempora eaque minus deleniti doloremque ab aliquid, iusto quaerat necessitatibus numquam corporis harum porro. Animi porro quidem dolores, beatae tenetur vel! Accusantium minima labore vel sit aperiam nemo voluptatibus ad nisi nostrum, velit similique natus, tenetur quasi? Magnam veritatis similique animi incidunt, asperiores ullam soluta est minus sunt itaque velit vitae dignissimos! Fugit enim dolorem quisquam neque ea commodi dolores voluptate sapiente accusantium. Illum, maiores?
+            </div>
+            <div class="col-md-4 pb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus praesentium ipsa quia blanditiis itaque laborum adipisci sed ratione saepe nihil quos, nam maiores velit consectetur magni voluptatem! Ratione dicta praesentium, veniam quo illum necessitatibus molestiae optio repellat nemo. Doloribus corporis dolorum iusto aut iure, quos fugiat ratione beatae facere eaque, voluptas nisi tempore ea nihil a similique commodi ipsam! Quisquam obcaecati animi, minus incidunt accusamus magni, ea recusandae iste distinctio laborum commodi velit ipsum sunt rem est quas ratione aperiam nesciunt. Accusantium ut architecto, quisquam id enim neque minima ipsam corporis saepe consequuntur dolores a delectus inventore consequatur minus aspernatur, sunt reiciendis atque cupiditate provident harum doloribus facere. Nulla excepturi illo sunt animi sed deserunt reiciendis aspernatur totam earum unde facere aliquid, quibusdam quasi, non nam perferendis fuga quidem neque quas quae culpa nemo tenetur! Quod perferendis illum recusandae dignissimos magnam vel eius iusto quidem delectus tenetur fuga neque nulla repellendus soluta, rem necessitatibus ipsa modi, repellat obcaecati unde explicabo sapiente corporis sunt! Iure magnam porro aut placeat deleniti culpa ea ipsum esse nesciunt ut non dolor, rem quia quisquam ratione impedit totam delectus quae perspiciatis voluptatum! Voluptas dicta illo id minima ullam dignissimos enim eligendi natus, sequi deserunt.
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/nav_scroll.js') }}"></script>
 {% endblock %}

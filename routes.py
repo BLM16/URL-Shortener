@@ -23,7 +23,10 @@ def KeyRedir(key):
         url = con.execute(sql, key = key).scalar()
 
     # Redirect to the url for the key
-    return redirect(url)
+    if url:
+        return redirect(url)
+    else:
+        return redirect(url_for('routes.Error', title = "Error: 404 - page not found", msg = f"The key <{key}> does not exist."))
 
 @routes.route('/error')
 def Error():
