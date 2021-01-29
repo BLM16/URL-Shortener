@@ -17,7 +17,7 @@ $(document).ready(function () {
     $(".navbar-toggler").click(() => {
         if (!$(".navbar-collapse").hasClass("show"))
             $(".navbar").addClass("bg-dark");
-        else
+        else if($(window).scrollTop() <= 56)
             $(".navbar").removeClass("bg-dark");
     });
 });

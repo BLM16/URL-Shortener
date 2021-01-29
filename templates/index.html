@@ -5,18 +5,29 @@
     {{ super() }}
     <div class="splash-bg jumbotron">
         <div class="pt-5">
-            <form method="post" class="container-fluid col-md-8">
-                <label class="sr-only" for="txtURL">URL</label>
-                <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text"><i class="fas fa-link"></i></div>
+            <div class="container-fluid col-md-8">
+                <form method="post">
+                    <label class="sr-only" for="txtURL">URL</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fas fa-link"></i></div>
+                        </div>
+                        {% if error %}
+                        <input class="form-control form-control-lg is-invalid" type="text" name="url" value="{{ urlVal }}" id="txtURL" placeholder="URL you wish to shorten . . .">
+                        {% else %}
+                        <input class="form-control form-control-lg" type="text" name="url" id="txtURL" placeholder="URL you wish to shorten . . .">
+                        {% endif %}
+                        <div class="input-group-append">
+                            <input type="submit" class="btn btn-primary" value="  Go  ">
+                        </div>
                     </div>
-                    <input class="form-control form-control-lg" type="text" name="url" id="txtURL" placeholder="URL you wish to shorten . . .">
-                    <div class="input-group-append">
-                        <input type="submit" class="btn btn-primary" value="  Go  ">
-                    </div>
+                </form>
+                {% if short %}
+                <div class="short-holder">
+                    <p style="color: white;"><a class="btn btn-link" href="{{ short }}">{{ short }}</a> - <button class="btn btn-link" onclick="navigator.clipboard.writeText('{{ short }}'); javascript:$(this).addClass('text-success').css('font-weight', 'bold').text('copied!').blur()">copy</button></p>
                 </div>
-            </form>
+                {% endif %}
+            </div>
         </div>
     </div>
 
@@ -38,4 +49,5 @@
 {% block scripts %}
 {{ super() }}
     <script type="text/javascript" src="{{ url_for('static', filename = 'js/nav_scroll.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/input_validator.js') }}"></script>
 {% endblock %}
