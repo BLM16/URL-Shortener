@@ -1,3 +1,5 @@
+:root { --gradient: linear-gradient(110deg, navy, purple); }
+
 .navbar.bg-dark { box-shadow: 0 0 8px 1px #343A40; }
 
 .top-spacemaker { padding-top: calc(50px + 5vh); }
@@ -5,7 +7,7 @@
 .bottom-spacemaker { padding-top: 50px; }
 
 .splash-bg {
-    background: linear-gradient(110deg, navy, purple);
+    background: var(--gradient);
     position: absolute;
     top: 0;
     right: 0;
@@ -17,3 +19,16 @@
 }
 
 .main { transform: translateY(60vh); }
+
+.text-icon-header {
+    background: var(--gradient);
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    width: fit-content;
+}
+
+.text-icon-header > .fas {
+    color: white;
+    font-size: 30pt;
+    padding: 15px;
+}
